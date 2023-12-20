@@ -111,7 +111,7 @@ function CategoryList() {
             
       
             <div className="bg-white p-4 rounded shadow">
-                {add ? 
+                {!add ? 
                  <table className="table-auto w-full">
                     <thead>
                         <tr>
