@@ -11,7 +11,10 @@ const db= mongoose.connect(process.env.DB)
 if(db){
     console.log('database connected')
 }
-app.use(cors())
+ app.use(cors({
+    origin: process.env.CLIENT,
+    methods: ["GET", "POST"],
+  }));
 app.use(express.urlencoded({ extended: false }));
 app.use(express.json());
 
