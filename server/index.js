@@ -7,10 +7,17 @@ const mongoose = require('mongoose')
 const cors = require('cors');
 
 
-const db= mongoose.connect(process.env.DB)
-if(db){
-    console.log('database connected')
-}
+
+mongoose.connect(process.env.DB,{
+    useNewUrlParser:true,
+    useUnifiedTopology:true
+  })
+  .then(()=>{
+    console.log("database connected ");
+  })
+  .catch((error)=>{
+    console.log(error);
+  })
  app.use(cors({
     origin: process.env.CLIENT,
     methods: ["GET", "POST"],
