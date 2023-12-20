@@ -7,7 +7,7 @@ import axios from 'axios'
 import { categoryAdd, categoryList } from '../../../apis/connections/Admin'
 
 function CategoryList() {
-    const [add,setAdd] = useState(false)
+    const [add,setAdd] = useState(true)
     const [image,setImage] = useState("")
     const [name,setName] = useState("")
     const [color,setColor] = useState("")
@@ -111,7 +111,7 @@ function CategoryList() {
             
       
             <div className="bg-white p-4 rounded shadow">
-                {!add ? 
+                {add ? 
                  <table className="table-auto w-full">
                     <thead>
                         <tr>

@@ -7,7 +7,7 @@ import { categoryList, productAdd, productList } from "../../../apis/connections
 
 
 function ProductList() {
-  const [add, setAdd] = useState(false);
+  const [add, setAdd] = useState(true);
   const [image,setImage] = useState()
   const [name,setName] = useState("")
   const [price,setPrice] = useState("")
@@ -134,7 +134,7 @@ function ProductList() {
         <h2 className="text-2xl font-bold mb-4">Dashboard</h2>
 
         <div className="bg-white p-4 rounded shadow">
-          {!add ? (
+          {add ? (
             <table className="table-auto w-full">
               <thead>
                 <tr>
