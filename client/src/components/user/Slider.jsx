@@ -57,8 +57,8 @@ function Slider() {
                   </button>
                 </div>
               </div>
-              <div className="md:w-1/2 w-full h-full p-8 bg-pink-200 hidden   md:block pl-0">
-                <img src={value.image} alt="" className="hidden md:block mt-10" />
+              <div className="md:w-1/2 w-full   bg-pink-200 hidden   md:block pl-0">
+                <img  src={value.image} alt="" className="hidden md:block" />
               </div>
             </div>
           </div>
