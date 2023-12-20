@@ -1,6 +1,6 @@
 import Footer from "../../../components/user/Footer"
 import Navbar from "../../../components/user/Navbar"
-import SingleCategory from "../../../components/user/singleCategory"
+import SingleCategory from "../../../components/user/SingleCategory"
 
 function Single() {
   return (
