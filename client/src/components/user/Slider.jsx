@@ -30,13 +30,7 @@ function Slider() {
     console.log(data);
     navigate("/checkout", { state: [data] });
   };
-  const contentStyle = {
-    height: "360px",
-    color: "#ff1493",
-    lineHeight: "160px",
-    textAlign: "center",
-    background: "#e8a9e1",
-  };
+
   return (
     <div
       id="default-carousel"
