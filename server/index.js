@@ -20,7 +20,6 @@ mongoose.connect(process.env.DB,{
   })
  app.use(cors({
     origin: process.env.CLIENT,
-    methods: ["GET", "POST"],
   }));
 app.use(express.urlencoded({ extended: false }));
 app.use(express.json());
