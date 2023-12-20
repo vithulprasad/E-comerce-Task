@@ -18,7 +18,7 @@ function ProductList() {
 
   const handleImage = async(e)=>{
     try {
-        toast.success('entering')
+        
         const file = e.target.files
         const formData = new FormData();
         formData.append("file", file[0]);
@@ -36,7 +36,7 @@ function ProductList() {
       
 
         setImage(`${imageUrl}`);
-        toast.success(imageUrl);
+        toast.success('image added successfully')
     } catch (error) {
         console.log(error.message);
     }
